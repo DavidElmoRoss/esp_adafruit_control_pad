@@ -23,8 +23,8 @@ int bnum=0;                         // set bnumn # to zero
 int bnum1=0;                        // set bnum1 # to zero
 void setup() 
 {
-  Serial.begin(115200);             // initialize default UART0 port to 115200                                    // This way we can send chars to PC screen if necessary
-                                    // set Bluetooth port to 115200, 8 bits no parity and
+  Serial.begin(9600);             // initialize default UART0 port to 9600                                    // This way we can send chars to PC screen if necessary
+                                    // set Bluetooth port to 9600, 8 bits no parity and
                                     // assign the RX and TX pin connections for ESP32
   SerialPort.begin(9600, SERIAL_8N1, RX_PIN, TX_PIN); 
 }
